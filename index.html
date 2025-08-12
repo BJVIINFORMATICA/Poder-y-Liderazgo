@@ -56,36 +56,53 @@
         /* Estilos para las imágenes de fondo de cada sección */
         /* 'background-size: cover;' is the key property that ensures the image scales to cover the entire section while maintaining its aspect ratio. */
         /* 'background-attachment: fixed;' creates a parallax scrolling effect, making the page feel more dynamic. */
+        /* The 'background-position: top;' property makes the images start from the top of their containers. */
         .bg-inicio {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://seminarioiiuntref.wordpress.com/wp-content/uploads/2021/05/lider1-768x403-1.jpg?w=768');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://media.istockphoto.com/id/2121029847/es/vector/gran-grupo-de-personas-diversas-con-pensamientos.jpg?s=612x612&w=0&k=20&c=KhH2jZbTtj_dfk-78unDY8KKUsdMLtm6HRvD2iu6wvE=');
             background-size: cover;
-            background-position: center;
+            background-position: center; /* Cambiado a 'center' para mejor visualización */
+            background-repeat: no-repeat; /* Asegura que la imagen no se repita */
             background-attachment: fixed;
             color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
         }
 
         .bg-conceptos {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://placehold.co/1200x800/F2CC8F/3D405B?text=Conceptos');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://blogposgrado.ucontinental.edu.pe/hs-fs/hubfs/Fotos%202022/Gesti%C3%B3n%20Empresarial/liderazgo-autoridad-poder-direccion-integral.jpg?width=1080&height=630&name=liderazgo-autoridad-poder-direccion-integral.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: center; /* Cambiado a 'center' para mejor visualización */
+            background-repeat: no-repeat; /* Asegura que la imagen no se repita */
             background-attachment: fixed;
             color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
         }
 
         .bg-analisis {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://placehold.co/1200x800/E07A5F/FFFFFF?text=Análisis');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://www.conceptosjuridicos.com/wp-content/uploads/2019/03/emancipacion.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: center; /* Cambiado a 'center' para mejor visualización */
+            background-repeat: no-repeat; /* Asegura que la imagen no se repita */
             background-attachment: fixed;
             color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
         }
 
         .bg-caso-practico {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://placehold.co/1200x800/3D405B/FFFFFF?text=Caso+Práctico');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://static.wixstatic.com/media/1ced5a_2a2c6067e8a941f1b17c55b16717974a~mv2.jpg/v1/fill/w_528,h_298,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1ced5a_2a2c6067e8a941f1b17c55b16717974a~mv2.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: center; /* Cambiado a 'center' para mejor visualización */
+            background-repeat: no-repeat; /* Asegura que la imagen no se repita */
             background-attachment: fixed;
             color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
         }
     </style>
 </head>
@@ -194,18 +211,17 @@
                 </div>
                 <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                     <div class="col-span-2">
-                         <div class="bg-white/10 p-6 rounded-lg shadow-md">
+                          <div class="bg-white/10 p-6 rounded-lg shadow-md">
                             <h3 class="font-bold text-xl text-[#E07A5F]">Reproducción vs. Emancipación</h3>
                             <p class="mt-2"><strong class="font-semibold">Reproducción:</strong> Las escuelas a menudo ejercen poder simbólico (Bourdieu) al marginalizar lenguas indígenas y usar un "modelo bancario" de educación (Freire) donde no hay diálogo.</p>
                             <p class="mt-4"><strong class="font-semibold">Emancipación:</strong> Experiencias históricas como la escuela-ayllu de Warisata y proyectos actuales como las escuelas autónomas zapatistas demuestran que la democratización del poder es posible.</p>
-                         </div>
+                          </div>
                     </div>
                     <div class="col-span-1">
-                         <div class="bg-white/10 p-6 rounded-lg shadow-md text-center">
+                          <div class="bg-white/10 p-6 rounded-lg shadow-md text-center">
                             <h3 class="font-bold text-xl">El Liderazgo de la Mujer</h3>
                             <p class="mt-2">En El Alto, las mujeres lideran activamente en sus comunidades, destacando un dato clave sobre su participación en educación:</p>
                             <div class="chart-container mt-4">
-                                <canvas id="genderChart"></canvas>
                             </div>
                             <p class="text-sm mt-2">Fuente: UNICEF Bolivia, 2022</p>
                         </div>
@@ -224,8 +240,8 @@
                     <h3 class="font-bold text-2xl text-center text-[#3D405B]">Logros de la Junta Escolar</h3>
                     <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
                         <div class="flex flex-col items-center">
-                            <img src="https://placehold.co/64x64/E07A5F/FFFFFF?text=Aulas" alt="Icono de aulas" class="w-16 h-16 mb-2 rounded-lg">
-                            <h4 class="font-semibold">Nuevas Aulas</h4>
+                            <span class="text-4xl">🏢</span>
+                            <h4 class="font-semibold mt-2">Nuevas Aulas</h4>
                             <p class="text-sm text-gray-600">Gestionaron la construcción de aulas con materiales reciclados.</p>
                         </div>
                         <div class="flex flex-col items-center">
